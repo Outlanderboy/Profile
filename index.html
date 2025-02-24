@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pavan Gadireddy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Pavan Gadireddy</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+      <section id="home-section" class="hero" style="position: relative; width: 100%; height: 100%; overflow: hidden;">
+
+        <!-- Background Image -->
+        <img src="images/hero_bg.JPG" alt="Background Image" 
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+      
+        <div class="home-slider owl-carousel">
+          <div class="slider-item">
+            <div class="container">
+              <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                <div class="one-forth d-flex align-items-center ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }" style="color: white;">
+                  <div class="text">
+                    <span class="subheading">Hello!</span>
+                    <h1 class="mb-4 mt-3">I'm <span>Pavan Gadireddy</span></h1>
+      
+                    <!-- Typing Animation -->
+                    <span id="typing-animation"></span>
+                    <script>
+                      const typingAnimationElement = document.getElementById('typing-animation');
+                      const typingTexts = ['Engineering Management Graduate', 'Coder', 'Learner'];
+                      function playTypingAnimation(text) {
+                        for (let i = 0; i < text.length; i++) {
+                          setTimeout(() => {
+                            typingAnimationElement.textContent += text[i];
+                          }, i * 200);
+                        }
+                        setTimeout(() => {
+                          typingAnimationElement.textContent = '';
+                          playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                        }, text.length * 200);
+                      }
+                      playTypingAnimation(typingTexts[0]);
+                    </script>
+      
+                    <br><br>
+                    <h2>Data Analyst</h2>
+                    <p>
+                      <a href="https://www.linkedin.com/in/pavan-gadireddy/" class="btn btn-primary py-3 px-4">linkedin</a>
+                      <a href="https://outlanderboy.github.io/Profile/" class="btn btn-primary py-3 px-4">GitHub</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Pavan Gadireddy</span></p>
+										<p><span class="title-s">Role: </span> <span>Aspiring Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>2 Years 5 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Tampa, Florida</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Strengths</p>
+									<span>Python</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With a strong background in engineering management and data analytics, I specialize in machine learning, statistical analysis, and business intelligence. Proficient in Python, SQL, R, and frameworks like Django and TensorFlow, I have successfully led projects in predictive modeling, financial analysis, and IoT-based automation. My experience includes leveraging data-driven strategies to enhance customer engagement and optimize business operations. Passionate about innovation and problem-solving, I am always eager to explore new technologies and drive impactful solutions.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Technical Languages:</span> <span>Python, SQL, R, JAVA, Unix/Bash, Shell</span></li>
+									<li class="d-flex"><span>Frameworks:</span> <span>DJANGO, Scikit-Learn, TensorFlow &amp; Flask</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Microsoft Power BI, Excel, MySQL, RStudio, Google Spreadsheets &amp; Tableau</span></li>
+									<li class="d-flex"><span>Platforms:</span> <span>Visual Studio Code, ATOM, Jupyter Notebook, PySpark, JIRA &amp; PyCharm</span></li>
+									<li class="d-flex"><span>CI/CD, Containerization:</span> <span>GIT, Terraform, Kubernetes &amp; Docker</span></li>
+                                    <li class="d-flex"><span>Machine Learning techniques:</span> <span>Linear Regression, Neural Networks, clustering, NLP &amp; Computer Vision</span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>English, Spanish, Russian, Japanese</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="9">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/pavan-gadireddy/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Data Analyst with a strong background in engineering management, data analytics, and machine learning. Proven expertise in statistical analysis, predictive modeling, and business intelligence to drive data-driven decision-making. Skilled in Python, SQL, R, and frameworks like TensorFlow and Django, with experience optimizing business strategies through analytics. Passionate about leveraging data to solve complex problems and enhance operational efficiency.</p>
+          </div>
+        </div>
+    <section class="ftco-section ftco-no-pb" id="#Experience-section">
+		<div class="container">
+            <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+			<h2 class="mb-4">Professional Experience</h2>
+			<div class="underline"></div>
+            </div>
+		</div>
+    </section>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2020 - July 2022</span>
+						<h2>Business Development Manager</h2>
+						<span class="position">Skill-Lync, Hyderabad, India</span>
+						<p class="mt-4">Skill-Lync delivers quality education by leveraging technology to equip students with the technical skillset they require, to start and succeed in their respective career paths. 
+							<ul>
+								<li>Utilized advanced data analytics tools (SQL, Power BI, Excel) to extract actionable insights, enabling the 
+                                    achievement of term goals and a consistent 500K revenue increase per term.</li>
+								<li>Streamlined team collaboration using GIT, Jira, and TerraFlow to automate workflows, improve performance 
+                                    tracking, and optimize data pipelines, driving faster decision-making and boosting operational efficiency.</li>
+								<li>Developed and deployed predictive models for customer segmentation, utilizing machine learning techniques to drive 
+                                    a 50% increase in sales growth per term by enhancing targeted marketing strategies.</li>
+                                <li>Analyzed and visualized performance metrics for a team of 30 Junior Executives, applying data-driven insights to 
+                                    adjust workflows and optimize resource allocation, leading to a 25% monthly revenue growth.</li>
+                                <li>Engineered custom Algorithms based on customer segmentation and behavioral data, improving product delivery 
+                                    strategies and elevating customer satisfaction from 78% to 94%.</li>
+                                <li>Partnered with marketing, product, and CRM teams to implement data-driven strategies, enhancing product 
+                                    competitiveness and customer engagement. Leveraged A/B testing frameworks to continuously monitor and optimize 
+                                    marketing campaigns, boosting sales conversion rates based on real-time customer interaction data.</li>
+                                <li>Utilized Jira for project tracking, enabling Agile methodologies within cross-functional teams to ensure efficient 
+                                    communication, task prioritization, and timely delivery of data-driven strategies and product improvements.</li>
+                    
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> December 2018 - January 2021</span>
+						<h2>Sales Management Intern</h2>
+						<span class="position">Royal Enfield</span>
+						<p class="mt-4">Royal Enfield is an Indian multinational motorcycle manufacturing company, headquartered in Chennai. 
+							<ul>
+								<li>Utilized MS Excel and Word to streamline weekly reports on Domestic & Export Sales and Sub-contracting, 
+                                    enhancing reporting efficiency.</li>
+								<li>Implemented resource allocation strategies using automation tools for seamless 
+                                    fund distribution, supporting growth across departments. </li>
+								<li>Collaborated with cross-functional teams to analyze customer needs, optimizing product delivery and boosting sales 
+                                    by 30% while simultaneously leveraging data-driven solutions to achieve a 20% increase in revenue</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2024</span>
+    					<h2>Master of Science</h2>
+    					<span class="position">University of South Florida</span>
+    					<p class="mt-4">GPA - 3.5</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2020</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">SRM Institute of Science and Technology</span>
+    					<p class="mt-4">GPA - 3.0</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+              <h1 class="big big-2">Projects</h1>
+              <h2 class="mb-4">Projects</h2>
+              <p>Below are the Academic projects on Data Analysis, SQL, Python, Power BI, Finance, IOT, Capstone.</p>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <!-- First row, first column -->
+            <div class="col-md-6 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end zoom-effect">
+                <!-- Image placed directly above the content -->
+                <img src="images/proj_1.jpg" alt="Project Image" class="img-fluid" style="width: 100%; height: auto;">
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">IOT Based IC Engine Water Pump Control for Smart Irrigation System</h3>
+                  <p>Deployed IoT sensors (soil moisture, temperature, humidity) across a 5-acre field using Arduino and Raspberry Pi, with Blynk for real-time monitoring and mobile control.
+                    Developed Python scripts for real-time data collection, processing, and analysis, storing sensor data in the cloud, and using PowerBI for actionable insights and visualizations.
+                    Automated irrigation control with Python-based algorithms that trigger pump operation based on soil moisture thresholds, optimizing water usage and reducing waste by 25%.
+                    Created a web dashboard with Flask for remote monitoring, integrated cloud storage for scalable data management, and used MQTT for reliable sensor-to-cloud synchronization, enhancing system efficiency. Analyzed music store data using advanced SQL queries to identify gaps and increase business growth.</p>
+                </div>
+              </div>
+            </div>
+            <!-- First row, second column -->
+            <div class="col-md-6 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end zoom-effect">
+                <img src="images/proj_2.jpg" alt="Project Image" class="img-fluid" style="width: 100%; height: auto;">
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Predicting Forest Fires: The Future of Forest Fire Fighting</h3>
+                  <li> Python (Pandas, Scikit-learn) to apply Clustering and Linear Regression algorithms, predicting future forest fire occurrences with 0% error in Jupyter Notebooks.</li>
+                    <li> Analyzed a dataset with 13 attributes using Python libraries (Pandas) to identify high-risk areas.</li>
+                    <li>predicted fire locations using Matplotlib for clear, actionable insights.</li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <!-- Second row, first column -->
+            <div class="col-md-6 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end zoom-effect">
+                <img src="images/proj_3.jpg" alt="Project Image" class="img-fluid" style="width: 100%; height: auto;">
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Dynamic Financial Analysis for Strategic Investment Allocation</h3>
+                  <p>Utilized Excel (VLOOKUP, PivotTables, and Power Query) to analyze financial data from four Railway companies.
+                    Extracted and processed five years of Form-10K data using Python (Pandas) for enhanced analysis accuracy.
+                    Applied financial modeling techniques (ratio and trend analysis) to deliver data-driven investment insights.
+                    Used Power BI to visualize key metrics, providing clear, actionable strategic investment recommendations.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Second row, second column -->
+            <div class="col-md-6 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end zoom-effect">
+                <img src="images/proj_4.jpg" alt="Project Image" class="img-fluid" style="width: 100%; height: auto;">
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Capstone Project: Strategic Decision-Making through MOGUL CEO Simulation</h3>
+                  <p>Implemented strategic planning and various policy conception in technical organizations.
+                    Acquired practical insights by implementing weekly changes to drive organizational growth.
+                    Through dual-product strategy and market evaluation, achieved third place in the competition amongst the class.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="7">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="12">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="143">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to do coding &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Outlanderboy" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>12732 University Club Drive, Tampa, Florida</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 1 813-397-9761</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">pavangadireddy1999@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><h3><a href="https://drive.google.com/file/d/1F_9oqIKIYnbQsHMmj7hLSh--5X06_Tkg/view?usp=drive_link" target="_blank">Link</a></h3>
+                </p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfu8SlQXRYpPaUL0X5HVjQsf6o8fjaFCbylN40HTlPxWqQ79g/viewform?usp=header" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate">
+                        <a href="https://discordapp.com/users/outlander9787">
+                          <img src="images/discord.png" alt="Discord Icon" style="width: 50px; height: 50px;">
+                        </a>
+                      </li>                      
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/pavan-gadireddy/">                          
+                        <img src="images/linkedin.png" alt="linkedin Icon" style="width: 50px; height: 50px;">
+                      </a>
+                    </li>  
+					  <li class="ftco-animate"><a href="https://github.com/Outlanderboy">                          
+                        <img src="images/github-logo.png" alt="Github Icon" style="width: 50px; height: 50px;">
+                      </a>
+                    </li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/pavangadireddi">                          
+                        <img src="images/facebook.png" alt="Facebook icon" style="width: 50px; height: 50px;">
+                      </a>
+                    </li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/the_outlander_/">                          
+                        <img src="images/instagram.png" alt="instagram Icon" style="width: 50px; height: 50px;">
+                      </a>
+                    </li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
